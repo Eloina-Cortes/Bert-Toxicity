@@ -15,8 +15,8 @@ warnings.filterwarnings('ignore')
 print("Iniciando entrenamiento BERT multi-etiqueta...")
 
 # 1. Cargar datos
-train_df = pd.read_csv("train.csv")
-test_df = pd.read_csv("test.csv")
+train_df = pd.read_csv("./train_sample.csv")
+test_df = pd.read_csv("./test_sample.csv")
 
 # Etiquetas de Kaggle
 label_cols = ["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]
