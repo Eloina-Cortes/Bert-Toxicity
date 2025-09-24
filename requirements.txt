@@ -1,6 +1,7 @@
-pandas
-numpy
+pandas==2.2.3
+numpy==1.26.4
 torch==2.3.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
-transformers
-datasets
-scikit-learn
+transformers==4.44.2
+datasets==3.0.1
+scikit-learn==1.5.2
+
