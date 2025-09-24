@@ -23,7 +23,7 @@ classifier = pipeline(
 print("Modelo cargado para predicción")
 
 # 3. Cargar test.csv
-test_df = pd.read_csv("test.csv")
+test_df = pd.read_csv("./test.csv")
 
 # Si Kaggle test.csv no tiene etiquetas, solo tiene ["id","comment_text"]
 if "comment_text" not in test_df.columns:
