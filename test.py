@@ -43,7 +43,8 @@ preds_df = pd.DataFrame(preds, columns=label_cols)
 
 # 5. Crear archivo submission.csv
 submission = pd.concat([test_df["id"], preds_df], axis=1)
-submission.to_csv("submission.csv", index=False)
+#submission.to_csv("submission.csv", index=False)
+submission.to_csv("/app/resultados/submission.csv", index=False)
 
 print("\n¡Predicciones guardadas en submission.csv!")
 print(submission.head())
