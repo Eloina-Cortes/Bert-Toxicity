@@ -36,7 +36,7 @@ if set(label_cols).issubset(test_df.columns):
 else:
     test_df = test_df[["id", "comment_text"]].rename(columns={"comment_text": "text"})
 
-print(f"Datos cargados: {len(train_df)} train, {len(test_df)} test")
+#print(f"Datos cargados: {len(train_df)} train, {len(test_df)} test")
 
 # 2. Configurar modelo
 model_name = "bert-base-uncased"
